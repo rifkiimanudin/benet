@@ -33,7 +33,6 @@
                             <td>Rp. <?= number_format($pl['harga'], 0, ',', '.'); ?></td>
                             <td>
                                 <a href="<?= base_url('pembayaran/detail/' . $pl['id']); ?>" class="badge badge-warning">Rincian</a>
-
                             </td>
                         </tr>
                         <?php $i++; ?>

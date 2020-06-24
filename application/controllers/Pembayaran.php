@@ -27,7 +27,7 @@ class Pembayaran extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function bayar()
+    public function detail()
     {
         $data['title'] = 'Data Pembayaran';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
