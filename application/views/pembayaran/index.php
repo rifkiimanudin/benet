@@ -32,7 +32,6 @@
                             <td><?= $pl['nama_paket']; ?></td>
                             <td>Rp. <?= number_format($pl['harga'], 0, ',', '.'); ?></td>
                             <td>
-                                <a href="<?= base_url('pembayaran/bayar/' . $pl['id']); ?>" class="badge badge-success">Bayar</a>
                                 <a href="<?= base_url('pembayaran/detail/' . $pl['id']); ?>" class="badge badge-warning">Rincian</a>
 
                             </td>
