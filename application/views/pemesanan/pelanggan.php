@@ -40,7 +40,7 @@
                             <td><?= $pl['status']; ?></td>
                             <td>
                                 <a href="" data-toggle="modal" data-target="#modal-edit<?= $pl['id']; ?>" class="badge badge-success">edit</a>
-                                <a href="<?php echo site_url('pelanggan/delete/' . $pl['id']); ?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data <?= $pl['nama']; ?> ?');" class="badge badge-danger">hapus</a>
+                                <a href="<?php echo site_url('pemesanan/delete/' . $pl['id']); ?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data <?= $pl['nama']; ?> ?');" class="badge badge-danger">hapus</a>
                             </td>
                         </tr>
                         <?php $i++; ?>

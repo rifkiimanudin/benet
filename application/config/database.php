@@ -72,7 +72,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = true;
+// 'hostname' => 'localhost',
+// 'username' => 'root',
+// 'password' => '',
+// // 'database' => 'benet',
 
+// 'hostname' => 'db4free.net',
+//     'username' => 'rekadata_2020',
+//     'password' => 'Kampret6cm',
+//     'database' => 'benet_2020',
 $db['default'] = array(
     'dsn'    => '',
     'hostname' => 'db4free.net',

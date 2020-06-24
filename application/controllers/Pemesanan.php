@@ -162,8 +162,7 @@ class Pemesanan extends CI_Controller
         $this->load->model('Pelanggan_model', 'pelanggan');
 
         $data['pelanggan'] = $this->pelanggan->getPelanggan();
-        $data['daftarkan'] = $this->db->get('tb_daftar')->result_array();
-        $data['paketkan'] = $this->db->get('tb_paket')->result_array();
+
 
         $this->form_validation->set_rules('id_daftar', 'Daftar', 'required');
         $this->form_validation->set_rules('id_paket', 'Paket', 'required');
@@ -185,6 +184,18 @@ class Pemesanan extends CI_Controller
             ];
             $this->db->insert('tb_pelanggan', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Pelanggan Telah di daftarkan</div>');
+            redirect('pemesanan/pelanggan');
+        }
+    }
+    public function delete($id)
+    {
+        if ($id == "") {
+            $this->session->set_flashdata('error', "Data Anda Gagal Di Hapus");
+            redirect('pemesanan/pelanggan');
+        } else {
+            $this->db->where('id', $id);
+            $this->db->delete('tb_pelanggan');
+            $this->session->set_flashdata('sukses', "Data Berhasil Dihapus");
             redirect('pemesanan/pelanggan');
         }
     }

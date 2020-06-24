@@ -5,21 +5,24 @@ class Pelanggan_model extends CI_Model
 {
     public function getPelanggan()
     {
-        $query = "SELECT *
-            FROM tb_pelanggan AS pelanggan
-           INNER JOIN tb_paket AS paket
-           ON paket.id = pelanggan.id_paket
-           INNER JOIN tb_daftar AS daftar
-           ON daftar.id = pelanggan.id_daftar";
+        $query = "SELECT tb_pelanggan.id, tb_daftar.nama, tb_paket.nama_paket, tb_paket.harga, tb_pelanggan.tanggal, tb_pelanggan.status
+            FROM tb_pelanggan 
+           INNER JOIN tb_paket 
+           ON tb_paket.id = tb_pelanggan.id_paket
+           INNER JOIN tb_daftar 
+           ON tb_daftar.id = tb_pelanggan.id_daftar";
         return $this->db->query($query)->result_array();
     }
 
-    public function getPaket()
+    public function getPelangganbyid($id)
     {
-        $query = "SELECT `tb_data`.*, `tb_data`.`id_paket`
-                  FROM `tb_paket` JOIN `tb_data`
-                  ON `tb_data`.`id_paket` = `tb_paket`.`id`
-                ";
+        $query = "SELECT tb_pelanggan.id, tb_daftar.nama, tb_paket.nama_paket, tb_paket.harga, tb_pelanggan.tanggal, tb_pelanggan.status
+            FROM tb_pelanggan 
+           INNER JOIN tb_paket 
+           ON tb_paket.id = tb_pelanggan.id_paket
+           INNER JOIN tb_daftar 
+           ON tb_daftar.id = tb_pelanggan.id_daftar
+           WHERE tb_pelanggan.id = $id";
         return $this->db->query($query)->result_array();
     }
 }
