@@ -75,7 +75,7 @@ $query_builder = true;
 // 'hostname' => 'localhost',
 // 'username' => 'root',
 // 'password' => '',
-// // 'database' => 'benet',
+// 'database' => 'benet',
 
 // 'hostname' => 'db4free.net',
 //     'username' => 'rekadata_2020',
