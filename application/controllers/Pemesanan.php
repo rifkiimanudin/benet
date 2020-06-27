@@ -162,6 +162,8 @@ class Pemesanan extends CI_Controller
         $this->load->model('Pelanggan_model', 'pelanggan');
 
         $data['pelanggan'] = $this->pelanggan->getPelanggan();
+        $data['daftarkan'] = $this->db->get('tb_daftar')->result_array();
+        $data['paketkan'] = $this->db->get('tb_paket')->result_array();
 
 
         $this->form_validation->set_rules('id_daftar', 'Daftar', 'required');

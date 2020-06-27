@@ -35,56 +35,54 @@
 
     <hr>
 
+    <form action="<?= base_url('pembayaran/transaksi') ?>" method="post">
+
+        <div class="form-group row">
+            <label for="name" class="col-sm-1 col-form-label col-lg-3">Pilih Bulan</label>
+            <div class="col-sm">
+                <select name="bulan" id="bulan" class="form-control col-sm-2">
+                    <option value="januari">Januari</option>
+                    <option value="februari">Februari</option>
+                    <option value="maret">Maret</option>
+                    <option value="april">April</option>
+                    <option value="mei">Mei</option>
+                    <option value="juni">Juni</option>
+                    <option value="juli">Juli</option>
+                    <option value="agustus">Agustus</option>
+                    <option value="september">September</option>
+                    <option value="oktober">Oktober</option>
+                    <option value="november">November</option>
+                    <option value="desember">Desember</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="name" class="col-sm-1 col-form-label col-lg-3">Pilih Tahun</label>
+            <div class="col-sm">
+                <select name="tahun" id="tahun" class="form-control col-sm-2">
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="name" class="col-sm-1 col-form-label col-lg-3">Harga</label>
+            <div class="col-sm-2">
+                <?php foreach ($pelanggan as $pkt) : ?>
+                    <input type="text" class="form-control" id="harga" name="harga" value="<?= $pkt['harga']; ?>">
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Bayar</button> <br>
+    </form>
+    <br>
 
     <table class="table table-hover text-gray-900" id="mese">
-        <form action="<?= base_url('pembayaran/detail') ?>" method="post">
-
-            <div class="form-group row">
-                <label for="name" class="col-sm-1 col-form-label">Pilih Bulan</label>
-                <div class="col-sm">
-                    <select name="bulan" id="bulan" class="form-control col-sm-2">
-                        <option value="januari">Januari</option>
-                        <option value="februari">Februari</option>
-                        <option value="maret">Maret</option>
-                        <option value="april">April</option>
-                        <option value="mei">Mei</option>
-                        <option value="juni">Juni</option>
-                        <option value="juli">Juli</option>
-                        <option value="agustus">Agustus</option>
-                        <option value="september">September</option>
-                        <option value="oktober">Oktober</option>
-                        <option value="november">November</option>
-                        <option value="desember">Desember</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label for="name" class="col-sm-1 col-form-label">Pilih Tahun</label>
-                <div class="col-sm">
-                    <select name="tahun" id="tahun" class="form-control col-sm-2">
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label for="name" class="col-sm-1 col-form-label">Harga</label>
-                <div class="col-sm-2">
-                    <?php foreach ($pelanggan as $pkt) : ?>
-                        <input type="text" class="form-control" id="harga" name="harga" value="<?= $pkt['harga']; ?>">
-                    <?php endforeach; ?>
-                </div>
-            </div>
-
-
-            <button type="submit" class="btn btn-primary">Bayar</button> <br>
-        </form>
-        <br>
 
         <thead>
             <tr>
