@@ -49,38 +49,9 @@
             <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
 
 
-            <script src="<?= base_url('assets/'); ?>js/jquery.dataTables.js"></script>
-            <script src="<?= base_url('assets/'); ?>js/dataTables.bootstrap4.js"></script>
-            <script src="<?= base_url('assets/'); ?>js/dataTables.responsive.min.js"></script>
-            <script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
-            <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-            <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
-            <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
-
-
-            <script src="http://rekadata.com/asset/js/jquery.min.js"></script>
-            <script src="http://rekadata.com/asset/js/jquery-migrate-3.0.1.min.js"></script>
-            <script src="http://rekadata.com/asset/js/popper.min.js"></script>
-            <script src="http://rekadata.com/asset/js/bootstrap.min.js"></script>
-            <script src="http://rekadata.com/asset/js/jquery.easing.1.3.js"></script>
-            <script src="http://rekadata.com/asset/js/jquery.waypoints.min.js"></script>
-            <script src="http://rekadata.com/asset/js/jquery.stellar.min.js"></script>
-            <script src="http://rekadata.com/asset/js/owl.carousel.min.js"></script>
-            <script src="http://rekadata.com/asset/js/jquery.magnific-popup.min.js"></script>
-            <script src="http://rekadata.com/asset/js/aos.js"></script>
-            <script src="http://rekadata.com/asset/js/jquery.animateNumber.min.js"></script>
-            <script src="http://rekadata.com/asset/js/jquery.mb.YTPlayer.min.js"></script>
-            <script src="http://rekadata.com/asset/js/scrollax.min.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-            <script src="http://rekadata.com/asset/js/google-map.js"></script>
-            <script src="http://rekadata.com/asset/js/main.js"></script>
-
-
             <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
             <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
             <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
             <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
@@ -88,38 +59,20 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
             <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
             <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
-
-
-
+            <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.colVis.min.js"></script>
 
 
             <script type="text/javascript">
-                $.extend(true, $.fn.dataTable.defaults, {
-                    "searching": true,
-                    "ordering": true,
-                    paging: true
-                });
-                $(document).ready(function() {
-                    $('#mese').dataTable({
-                        "lengthMenu": [5, 10, 15, 20, 25, 30, 35, 50, 75, 100],
-                    });
-                });
-            </script>
-            <script type="text/javascript">
-                $.extend(true, $.fn.dataTable.defaults, {
-                    "searching": true,
-                    "ordering": true,
-                    paging: true
-                });
                 $(document).ready(function() {
                     $('#example').DataTable({
-                        "lengthMenu": [5, 10, 15, 20, 25, 30, 35, 50, 75, 100],
                         dom: 'Bfrtip',
                         buttons: [
-                            'copy', 'csv', 'excel', 'pdf', 'print'
+                            'copy', 'excel', 'pdf', 'print'
                         ]
                     });
                 });
+            </script>
+
             </script>
 
             <script>

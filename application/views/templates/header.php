@@ -38,10 +38,7 @@
     <link rel="stylesheet" href="http://rekadata.com/asset/css/jquery.timepicker.css">
 
 
-    <link rel="stylesheet" href="http://rekadata.com/asset/css/flaticon.css">
-    <link rel="stylesheet" href="http://rekadata.com/asset/css/icomoon.css">
-    <link rel="stylesheet" href="http://rekadata.com/asset/css/style.css">
-    <link rel="stylesheet" href="http://rekadata.com/asset/css/floating.css">
+
 
 </head>
 
