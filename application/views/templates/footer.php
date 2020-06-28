@@ -106,8 +106,14 @@
                 });
             </script>
             <script type="text/javascript">
+                $.extend(true, $.fn.dataTable.defaults, {
+                    "searching": true,
+                    "ordering": true,
+                    paging: true
+                });
                 $(document).ready(function() {
                     $('#example').DataTable({
+                        "lengthMenu": [5, 10, 15, 20, 25, 30, 35, 50, 75, 100],
                         dom: 'Bfrtip',
                         buttons: [
                             'copy', 'csv', 'excel', 'pdf', 'print'
