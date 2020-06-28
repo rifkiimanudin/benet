@@ -22,4 +22,4 @@
 
 </head>
 
-<body class="bg-gradient-info">
+<body class="bg-primary" style="background-image: url('./assets/img/bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">">

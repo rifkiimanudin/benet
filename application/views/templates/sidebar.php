@@ -1,10 +1,10 @@
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <!-- <a class='navbar-brand text-center'>
-                <img src="assets/img/bg.jpeg" width="70">
-            </a> -->
+            <a class='navbar-brand text-center'>
+                <img src=<?= base_url('assets/img/logo.jpg') ?> width="100">
+            </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
