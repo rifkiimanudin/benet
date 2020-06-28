@@ -3,7 +3,7 @@
 
             <!-- Sidebar - Brand -->
             <a class='navbar-brand text-center'>
-                <img src=<?= base_url('assets/img/logo.jpg') ?> width="100">
+                <img src=<?= base_url('assets/img/ok.jpg') ?> width="100">
             </a>
 
             <!-- Divider -->

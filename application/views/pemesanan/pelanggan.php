@@ -17,7 +17,7 @@
                 <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#datapelanggan">+ Tambah Data Pelanggan</a>
             </div>
 
-            <table class="table table-hover text-gray-900" id="mese">
+            <table class="table table-hover text-gray-900" id="example">
                 <thead>
                     <tr>
                         <th scope="col">No</th>

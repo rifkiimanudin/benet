@@ -17,7 +17,7 @@
                 <a href="<?= base_url('pemesanan/form') ?>" class="btn btn-primary mb-3 ">+ Tambah Data Pendaftaran</a>
             </div>
 
-            <table class="table table-hover text-gray-900" id="mese">
+            <table class="table table-hover text-gray-900" id="example">
                 <thead>
                     <tr>
                         <th scope="col">No</th>
