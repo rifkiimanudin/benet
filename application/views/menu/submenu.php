@@ -18,7 +18,7 @@
 
             <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#newSubMenuModal">Tambah Submenu</a>
 
-            <table class="table table-hover text-gray-900">
+            <table class="table table-hover text-gray-900" id="example">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
