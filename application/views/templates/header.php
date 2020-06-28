@@ -23,6 +23,26 @@
     <link href="<?= base_url('assets/'); ?>css/responsive.bootstrap4.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
 
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/animate.css">
+
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/aos.css">
+
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/flaticon.css">
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/icomoon.css">
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/style.css">
+    <link rel="stylesheet" href="http://rekadata.com/asset/css/floating.css">
+
 </head>
 
 <body id="page-top">

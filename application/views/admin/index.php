@@ -5,7 +5,6 @@
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
     </div>
 
-    </ul>
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -17,91 +16,126 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
-                <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                </div>
 
-                <div class="row">
 
-                    <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800"><a href="<?= base_url('pemesanan/pendaftaran') ?>">Data Pendaftaran</a></div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-user fa-2x text-gray-300"></i>
+
+                <section class="ftco-section ftco-no-pt ftco-no-pb">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center order-md-last" style="background-image: url(http://rekadata.com/asset/images/about.jpg);">
+                            </div>
+                            <div class="col-md-7 wrap-about pt-md-5 ftco-animate">
+                                <div class="heading-section mb-5 pt-5 pl-md-5">
+                                    <div class="pr-md-5 mr-md-5 text-md-right">
+                                        <span class="subheading">Providing</span>
+                                        <h2 class="mb-4">What We Can Do for You</h2>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card border-left-success shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800"><a href="<?= base_url('pemesanan/paket') ?>">Data Paket</a></div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-box-open fa-2x text-gray-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Earnings (Monthly) Card Example -->
-                    <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card border-left-info shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1"></div>
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col-auto">
-                                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><a href="pendaftaran/paket<?= base_url('pemesanan/pelanggan') ?>">Data Pelanggan</a></div>
-                                            </div>
+                                <div class="pr-md-3 pr-lg-5 pl-md-5 mr-md-5 mb-5">
+                                    <div class="services-wrap d-flex">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="flaticon-innovation"></span>
+                                        </div>
+                                        <div class="media-body pl-md-0 pl-4 pr-4 order-md-first text-md-right">
+                                            <h3 class="heading">Be-NET</h3>
+                                            <p>Layanan koneksi Internet secara simultan dan dedicated CIR 1:1 menggunakan media Wireless atau Fiber Optic sampai ke CPE/ Perangkat Aktif disisi Pelanggan, biasa disebut dengan istilah Mixture/ campur.</p>
                                         </div>
                                     </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-user fa-2x text-gray-300"></i>
+                                    <div class="services-wrap d-flex">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="flaticon-innovation"></span>
+                                        </div>
+                                        <div class="media-body pl-md-0 pl-4 pr-4 order-md-first text-md-right">
+                                            <h3 class="heading">Local/IIX Be-NET</h3>
+                                            <p>Sama seperti produk <b>Be-NET</b> Tetapi akses yang diterima disisi Pelanggan adalah konten lokal seperti situs-situs detik.com republika.co.id kompas.com dan semisalnya, atau disebut IIX (Indonesia Internet eXchange) atau OpenIXP.</p>
+                                        </div>
+                                    </div>
+                                    <div class="services-wrap d-flex">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="flaticon-innovation"></span>
+                                        </div>
+                                        <div class="media-body pl-md-0 pl-4 pr-4 order-md-first text-md-right">
+                                            <h3 class="heading">BWAN</h3>
+                                            <p>Pelanggan adalah konten internal pelanggan atau INTRANET atau WAN/ VPN semisal untuk koneksi data aplikasi perusahaan, kantor dan instansi atau CCTV. Bisa digunaan untuk kebutuhan interkoneksi antar cabang perusahaan baik dalam satu kota (inner city) atau lintas kota (inter city).</p>
+                                        </div>
+                                    </div>
+                                    <div class="services-wrap d-flex">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="flaticon-innovation"></span>
+                                        </div>
+                                        <div class="media-body pl-md-0 pl-4 pr-4 order-md-first text-md-right">
+                                            <h3 class="heading">BROADBAND</h3>
+                                            <p>Layanan koneksi internet dari Rekadata untuk kalangan ritel khusus yang akan dibangunkan dengan kapasitas tertentu di suatu lokasi perumahan, cluster, apartemen ataupun lingkungan rumah dinas dan semisalnya dengan layanan Triple Play (Telepon PSTN, IPTV dan Internet) dengan Media Fiber Optic ke tempat pelanggan.</p>
+                                        </div>
+                                    </div>
+                                    <div class="services-wrap d-flex">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="flaticon-innovation"></span>
+                                        </div>
+                                        <div class="media-body pl-md-0 pl-4 pr-4 order-md-first text-md-right">
+                                            <h3 class="heading">BColo</h3>
+                                            <p>Layanan penyimpanan server di datacenter Rekadata, baik memiliki server sendiri atau server disiapkan oleh Rekadata. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </section>
+                <section class="ftco-section ftco-services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                                <div class="media block-6 services text-center">
+                                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                                        <span class="flaticon-ideas"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h3 class="heading">Business Strategy</h3>
+                                        <p>Mencari solusi yang terbaik untuk bisnis anda.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                                <div class="media block-6 services text-center">
+                                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                                        <span class="flaticon-analysis"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h3 class="heading">Data Analysis</h3>
+                                        <p>Mengolah data untuk mencari keputusan yang tepat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                                <div class="media block-6 services text-center">
+                                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                                        <span class="flaticon-web-design"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h3 class="heading">B-Devel</h3>
+                                        <p>Layanan Pembuatan aplikasi Web maupun Mobile.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+                                <div class="media block-6 services text-center">
+                                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                                        <span class="flaticon-idea"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h3 class="heading">Creative</h3>
+                                        <p>We're different!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                    <!-- Pending Requests Card Example -->
-                    <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card border-left-warning shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"></div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800"><a href="<?= base_url('pembayaran') ?>">Data Pembayaran</a></div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-user fa-2x text-gray-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
 
             </div>
 
         </div>
-
-
-
-
-    </div>
-
-    </div>
