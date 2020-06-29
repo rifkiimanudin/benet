@@ -1,9 +1,9 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
-    <!-- <div class="card mb-3">
-        <img src="assets/img/form.jpeg" class="card-img-top" width="300">
-    </div> -->
+    <div class="card mb-3">
+        <img src="<?= base_url('assets/img/form.jpeg') ?>" class="card-img-top">
+    </div>
 
     <!-- Page Heading -->
     <div class="row">

@@ -67,7 +67,7 @@
                     </div>
 
                     <a href="<?= base_url('pembayaran') ?>" class="btn btn-danger">Kembali</a>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Bayar</button>
                 </form>
             </div>
         </div>
