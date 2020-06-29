@@ -68,6 +68,12 @@ class Pembayaran extends CI_Controller
         $data['title'] = 'Data Pembayaran';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
+        $this->load->model('Pelanggan_model', 'pelanggan');
+
+        $data['pelanggan'] = $this->pelanggan->getPelangganbyid($id);
+
+        $data['transaksi'] = $this->db->get_where('tb_transaksi', ['id_pelanggan' => $id])->result_array();
+
         $this->form_validation->set_rules('bulan', 'Bulan');
         $this->form_validation->set_rules('tahun', 'Tahun');
         $this->form_validation->set_rules('harga', 'Tahun');

@@ -17,7 +17,7 @@
                 <a href="<?= base_url('pemesanan/form') ?>" class="btn btn-primary mb-3 ">+ Tambah Data Pendaftaran</a>
             </div>
 
-            <table class="table table-hover text-gray-900" id="example">
+            <table class="table table-bordered table-striped text-gray-900" id="example">
                 <thead>
                     <tr>
                         <th scope="col">No</th>
@@ -30,7 +30,7 @@
                     </tr>
                 <tbody>
                     <?php $i = 1; ?>
-                    <?php foreach ($pelanggan as $df) : ?>
+                    <?php foreach ($pendaftar as $df) : ?>
                         <tr>
                             <th scope="row"><?= $i; ?></th>
                             <td><?= $df['ktp']; ?></td>
@@ -40,7 +40,7 @@
                             <td><?= $df['alamat']; ?></td>
                             <td>
                                 <a href="" data-toggle="modal" data-target="#modal-edit<?= $df['id']; ?>" class="badge badge-success">edit</a>
-                                <a href="<?php echo site_url('pemesanan/detele_df/' . $df['id']); ?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data <?= $df['nama']; ?> ?');" class="badge badge-danger">hapus</a>
+                                <a href="<?php echo site_url('pemesanan/detele_daftar/' . $df['id']); ?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data <?= $df['nama']; ?> ?');" class="badge badge-danger">hapus</a>
                             </td>
                         </tr>
                         <?php $i++; ?>
@@ -57,7 +57,7 @@
 <!-- End of Main Content -->
 
 <?php $no = 0;
-foreach ($pelanggan as $df) : $no++; ?>
+foreach ($pendaftar as $df) : $no++; ?>
 
     <div id="modal-edit<?= $df['id']; ?>" class="modal fade">
         <div class="modal-dialog">

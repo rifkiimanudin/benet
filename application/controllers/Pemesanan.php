@@ -14,7 +14,7 @@ class Pemesanan extends CI_Controller
         $data['title'] = 'Data Pendaftaran';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['pelanggan'] = $this->db->get('tb_daftar')->result_array();
+        $data['pendaftar'] = $this->db->get('tb_daftar')->result_array();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -78,7 +78,7 @@ class Pemesanan extends CI_Controller
             redirect('pemesanan/pendaftaran');
         }
     }
-    public function delete_df($id)
+    public function delete_daftar($id)
     {
         if ($id == "") {
             $this->session->set_flashdata('error', "Data Anda Gagal Di Hapus");

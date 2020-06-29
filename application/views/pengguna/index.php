@@ -17,7 +17,7 @@
 
             <div>
             </div>
-            <table class="table table-hover text-gray-900" id="example">
+            <table class="table table-bordered table-striped text-gray-900" id="example">
                 <thead>
                     <tr>
                         <th scope="col">No</th>

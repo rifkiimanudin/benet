@@ -72,7 +72,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = true;
-
 // 'hostname' => 'localhost',
 // 'username' => 'root',
 // 'password' => '',
@@ -82,13 +81,13 @@ $query_builder = true;
 //     'username' => 'rekadata_2020',
 //     'password' => 'Kampret6cm',
 //     'database' => 'benet_2020',
-
 $db['default'] = array(
     'dsn'    => '',
     'hostname' => 'localhost',
     'username' => 'root',
     'password' => '',
     'database' => 'benet',
+    'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => false,
     'db_debug' => (ENVIRONMENT !== 'production'),
