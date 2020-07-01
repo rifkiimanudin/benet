@@ -189,6 +189,31 @@ class Pemesanan extends CI_Controller
             redirect('pemesanan/pelanggan');
         }
     }
+
+    public function edit_pl($id)
+
+    {
+        $this->form_validation->set_rules('id_daftar', 'Daftar', 'required');
+        $this->form_validation->set_rules('id_paket', 'Paket', 'required');
+        $this->form_validation->set_rules('tanggal', 'Tanggal');
+        $this->form_validation->set_rules('status', 'Status', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->session->set_flashdata('error', "Data Gagal Di Edit");
+            redirect('pemesanan/pelanggan');
+        } else {
+            $data = array(
+                'id_daftar' => $this->input->post('id_daftar'),
+                'id_paket' => $this->input->post('id_paket'),
+                'tanggal' => date('Y-m-d'),
+                'status' => $this->input->post('status')
+            );
+            $this->db->where('id', $_POST['id']);
+            $this->db->update('tb_pelanggan', $data);
+            $this->session->set_flashdata('sukses', "Data Berhasil Diedit");
+            redirect('pemesanan/pelanggan');
+        }
+    }
     public function delete($id)
     {
         if ($id == "") {

@@ -31,6 +31,7 @@
                         <label class="col-sm-5 col-form-label text-left">Pilih Bulan</label>
                         <div class="col-sm-7">
                             <select name="bulan" id="bulan" class="form-control">
+                                <option value=""></option>
                                 <option value="januari">Januari</option>
                                 <option value="februari">Februari</option>
                                 <option value="maret">Maret</option>
@@ -50,6 +51,7 @@
                         <label class="col-sm-5 col-form-label text-left">Pilih Tahun</label>
                         <div class="col-sm-7">
                             <select name="tahun" id="tahun" class="form-control">
+                                <option value=""></option>
                                 <option value="2020">2020</option>
                                 <option value="2021">2021</option>
                                 <option value="2022">2022</option>

@@ -23,12 +23,12 @@ class Pengguna extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function edit()
+    public function edit($id)
     {
         $data['title'] = 'Edit Data Pengguna';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['pengguna'] = $this->db->get_where('user', ['id'])->result_array();
+        $data['pengguna'] = $this->db->get_where('user', ['id' => $id])->result_array();
 
         $this->form_validation->set_rules('name', 'Full Name', 'required|trim');
         $this->form_validation->set_rules('role_id', 'Role Id', 'required|trim');
@@ -69,6 +69,7 @@ class Pengguna extends CI_Controller
 
             $this->db->set('name', $name);
             $this->db->set('role_id', $role_id);
+            $this->db->where('id', $id);
             $this->db->where('email', $email);
             $this->db->update('user');
 

@@ -41,6 +41,7 @@ class Pembayaran extends CI_Controller
 
         $this->form_validation->set_rules('bulan', 'Bulan');
         $this->form_validation->set_rules('tahun', 'Tahun');
+        $this->form_validation->set_rules('tanggal', 'Tanggal');
         $this->form_validation->set_rules('harga', 'Tahun');
 
         if ($this->form_validation->run() ==  false) {

@@ -40,8 +40,10 @@
                             <td><?php
                                 if ($us['role_id'] == 1) {
                                     echo "Administrator";
-                                } else {
+                                } else if ($us['role_id'] == 2) {
                                     echo "Sales";
+                                } else {
+                                    echo "Kasir";
                                 } ?></td>
                             <td><?= date('d F Y', $us['date_created']); ?></td>
                             <td>
