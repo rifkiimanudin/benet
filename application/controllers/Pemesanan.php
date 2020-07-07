@@ -23,6 +23,20 @@ class Pemesanan extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    public function survei($id)
+    {
+        $data['title'] = 'Survei Pelanggan';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['pendaftar'] = $this->db->get_where('tb_daftar', ['id' => $id])->result_array();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pemesanan/survei', $data);
+        $this->load->view('templates/footer');
+    }
+
     public function form()
     {
         $data['title'] = 'Formulir Pemesanan';

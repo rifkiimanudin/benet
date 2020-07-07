@@ -39,6 +39,7 @@
                             <td><?= $df['telp']; ?></td>
                             <td><?= $df['alamat']; ?></td>
                             <td>
+                                <a href="<?= base_url('pemesanan/survei/' . $df['id'])  ?>" class="badge badge-warning">survei</a>
                                 <a href="" data-toggle="modal" data-target="#modal-edit<?= $df['id']; ?>" class="badge badge-success">edit</a>
                                 <a href="<?php echo site_url('pemesanan/detele_daftar/' . $df['id']); ?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data <?= $df['nama']; ?> ?');" class="badge badge-danger">hapus</a>
                             </td>

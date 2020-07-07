@@ -18,7 +18,7 @@
 
             <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#newSubMenuModal">Tambah Submenu</a>
 
-            <table class="table table-bordered table-striped text-gray-900" id="example">
+            <table class="table table-bordered table-striped text-gray-900">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" class="btn btn-primary">Tambah</button>
                 </div>
             </form>
         </div>

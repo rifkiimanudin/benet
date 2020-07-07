@@ -14,7 +14,7 @@
 
             <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#newMenuModal">Tambah Menu</a>
 
-            <table class="table table-bordered table-striped text-gray-900" id="example">
+            <table class="table table-bordered table-striped text-gray-900">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
